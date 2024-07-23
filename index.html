@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-0jAp9F2rDz5o9GZDEsifZafu0zJOTXj2pRypO+FA/5LgGvlJbB9V9M3IYikr6zRZZJ5MUW0R+FL26M0pG6MZiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div class="container" id="home">
+      <nav class="p-5  md:flex md:items-center md:justify-between">
+        <div class="active-link flex justify-between items-center text-white ">
+          <a href="#home"><p class="logo px-20 md:px-15 text-white"><strong class="text-yellow-600">M</strong>eti</p></a>
+    
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+        
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#home" class="nav-link text-xl hover:text-cyan-500 duration-500">Home</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#about" class="nav-link text-xl hover:text-cyan-500 duration-500">About</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#services" class="nav-link text-xl hover:text-cyan-500 duration-500">Services</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#portfolio" class="nav-link text-xl hover:text-cyan-500 duration-500">Portfolio</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#contact" class="nav-link text-xl hover:text-cyan-500 duration-500">Contact</a>
+          </li>
+    
+
+    <h2 class=""></h2>
+        </ul>
+      </nav>
+      <div class="flex flex-row ">
+        <div class="absolute mt-20 top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full overflow-hidden border-1 border-white w-40 h-40 mb-7">
+          <img src="./assets/prof3.jpg" alt="Profile" class="w-full h-full object-cover">
+        </div>
+
+        <div class="headertxt absolute top-1/2 mt-20 " >
+  <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+          <h1 class="text-white">Hi, I'm  <span class="name"> Meti </span>Tamiru</h1>
+          <p class=" text-white "> I am  <span class="typing-effect "></span></p>
+        </div>
+
+      </div>
+      
+    </div>
+  </header>
+  <div class="about" id="about">
+    <div class="container">
+      <div class="row flex flex-row justify-between">
+        <div class="abt1 px-10">
+          <img src="./assets/prof.jpg" alt="">
+        </div>
+        <div class="abt2 text-white">
+          <h1 class="title ">About Me
+            </h1>
+          <p class="des ">I am a frontend developer with a growing skill in Python and machine learning. I specialize in creating dynamic and responsive user interfaces using ReactJS and React Native.I started my journey in web development a year ago, and since then, I have been passionate about building beautiful and functional web applications. I hold a certificate in Python and machine learning, which has enhanced my problem-solving skills and technical expertise. My experience includes developing an online market website using ReactJS, and I am constantly learning and exploring new technologies to improve my craft.Welcome to my portfolio, and I look forward to collaborating on exciting projects!</p>
+          <div class="tab-titles flex">
+            <p class="tab-links active-link "onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+            <p class="tab-links"onclick="opentab('Certificates')">Certificates</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul class="my-10">
+              <li><span class="text-yellow-600">Frontend</span><br>Developing  web app</li>
+              <li><span class="text-yellow-600">UI/UX</span><br>Designing  web/app interfaces</li>
+                <li><span class="text-yellow-600">Mobile App</span><br>Developing and interfaces designing </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Projects">
+
+                  <!--  Online Market  -->
+                  <div class="project-card">
+                      <h3 class="project-title">Online Market (Django & ReactJS)</h3>
+                      <p class="project-description">An online market platform developed using Django for backend and ReactJS for frontend.</p>
+                      <div class="project-links">
+                          
+                          <a href="https://github.com/MetiTamru/Online-Shopping-Full-Stack" target="_blank">GitHub</a>
+                      </div>
+                  </div>
+                  
+                  <!--  Business Mobile App  -->
+                  <div class="project-card">
+                      <h3 class="project-title">Business Mobile App (React Native)</h3>
+                      <p class="project-description">A business mobile application built using React Native for cross-platform compatibility.</p>
+                      <div class="project-links">
+                         
+                          <a href="#" target="_blank">GitHub</a>
+                      </div>
+               
+          </div>
+         
+      </div>
+ <!-- Certificate section --> 
+      
+      <div class="tab-contents" id="Certificates">
+        <section class="certificates-section text-yellow-600 text-white  ">
+          <div class="container mx-auto ">
+              
+      
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <!-- Certificate: Python Programming -->
+                  <div class="flex flex-col bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                      <div class="certificate-image">
+                          <img src="./assets/certif1.png" alt="Python Programming Certificate" class="w-full h-auto">
+                      </div>
+                      <div class="p-6">
+                          <h3 class="text-xl font-bold text-orange-500 mb-2">Python Programming Certificate</h3>
+                         
+                      </div>
+                  </div>
+      
+                  <!-- Certificate: Machine Learning -->
+                  <div class="flex flex-col bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                      <div class="certificate-image">
+                          <img src="./assets/certif1.png" alt="Machine Learning Certificate" class="w-full h-auto">
+                      </div>
+                      <div class="p-6">
+                          <h3 class="text-xl font-bold text-orange-500 mb-2">Machine Learning Certificate</h3>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      </div>
+      
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------------services------------------->
+<div id="services"><p class="service-text text-white mx-10 font-bold">My Services</p>
+  <div class="services-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    
+    <div id="ui-card" class="service-card">
+      <div class="card-content">
+        <h2 class="text-2xl font-bold mb-4">UI/UX Design</h2>
+        <p>Responsive Design: Creating websites that look great on any device, ensuring a seamless user experience.</p>
+        <p>User-Centered Design: Focusing on intuitive navigation and accessibility to enhance user satisfaction.</p>
+       <a href="#">Learn more</a>
+      </div>
+    </div>
+    <div id="web-card" class="service-card">
+      <div class="card-content">
+        <h2 class="text-2xl font-bold mb-4">Web Development</h2>
+        <p>Frontend Development: Crafting intuitive and responsive user interfaces using ReactJS, HTML5, Bootstrap CSS and Tailwind CSS.</p>
+
+        <p>Cross-Platform Compatibility: Developing websites that perform consistently across different browsers and devices.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+    <div id="phone-card" class="service-card">
+      <div class="card-content">
+        <h2 class="text-2xl font-bold mb-4">Mobile App Development</h2>
+        <p>With a keen eye for design, I develop apps that are not only functional but also visually appealing.</p>
+        <p>Cross-Platform Development: Building apps with React Native to ensure consistent performance across iOS and Android devices.</p>
+
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer class=" text-white py-8 px-4 md:px-8 mt-20">
+    <div class="max-w-screen-xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+        <div class="mb-4 md:mb-0">
+          <p class="text-4xl font-bold leading-tight">Meti Tamiru</p>
+          <p class="text-base">Frontend Web Developer</p>
+        </div>
+        <div>
+          <a href="contact.html" class="bg-yellow-700 hover:bg-yellow-500 text-white py-3 px-6 rounded-md transition duration-300 shadow-lg">GET IN TOUCH</a>
+        </div>
+      </div>
+      <div class="text-center mb-8">
+        <p class="text-lg">Let's build something incredible together—</p>
+        <p class="mt-2">Connect with me to explore how we can elevate your digital experience.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <h4 class="text-lg font-bold mb-4">About</h4>
+          <p class="text-sm text-gray-300">Passionate about creating beautiful and functional web experiences.</p>
+        </div>
+        <div class="text-center">
+          <h4 class="text-lg font-bold mb-4">Contact</h4>
+          <p class="text-sm text-gray-300">Email: metitamiru22@gmail.com</p>
+          <p class="text-sm text-gray-300">Phone: +251951024751</p>
+        </div>
+        <div class="text-center">
+          <h4 class="text-lg font-bold mb-4">Links</h4>
+          <ul>
+            <li><a href="certificates.html" class="text-gray-400 hover:text-white">Certificates</a></li>
+            <li><a href="https://github.com/MetiTamru" class="text-gray-400 hover:text-white">Projects</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <div id="contact" class="bg-yellow-700 py-3 mt-8 rounded-lg">
+        <div class="max-w-screen-xl mx-auto flex justify-center items-center space-x-6">
+         
+          <div class="footer-contact flex">
+            <a href="https://www.instagram.com/meti_tamru/" target="_blank" rel="noopener noreferrer"><img src="assets/instag.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/twit2.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/meti-tamiru-656977317/" target="_blank" rel="noopener noreferrer"><img src="assets/ln2.png" alt="LinkedIn"></a>
+            <a href="https://github.com/MetiTamru" target="_blank" rel="noopener noreferrer"><img src="assets/git1.png" alt="GitHub"></a>
+            <a href="https://t.me/bliiisssssss" target="_blank" rel="noopener noreferrer"><img src="assets/tg2.png" alt="Telegram"></a>
+            <a href="https://www.facebook.com/meti.tamru22" target="_blank" rel="noopener noreferrer"><img src="assets/fb.png" alt="Facebook"></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-8 text-center">
+        <p>&copy; 2024 Meti Tamiru. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+    
+
+  <script defer src="script.js">
+
+  </script>
+</body>
+</html>
